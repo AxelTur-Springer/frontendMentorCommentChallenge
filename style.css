@@ -15,6 +15,23 @@ padding: 2em 30em;
 .profileAndComment img{
     width: 24px;height: 24px;
 }
+.scoreNum{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right:1em;
+    text-align: center;
+    background-color: hsl(223, 19%, 93%);
+    padding: 5px 6px;
+    border-radius: 5px;
+}
+.scoreNum button{
+  background-color: inherit;
+  border: none;
+}
+.scoreNum button:hover{
+    cursor: pointer;
+  }
 
 .staticComment{
 background-color: white;
@@ -50,11 +67,11 @@ border-radius: 10px;
     align-items: center;
 }
 .replyBtn{
-    display: flex;
     text-align: center;
     margin-right: 12px;
 }
 .replyBtn button{
+    display: flex;
     border: none;
     background-color: inherit;
 }
