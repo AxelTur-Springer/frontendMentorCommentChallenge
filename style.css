@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+body{
+    background-color: hsl(228, 33%, 97%);
+}
+.flexCommentSeccion{
+display: flex;
+flex-direction: column;
+padding: 2em 30em;
+}
+.profileAndComment img{
+    width: 24px;height: 24px;
+}
+
+.staticComment{
+background-color: white;
+display: flex;
+margin-top: 1em;
+padding: 1.3em;
+border-radius: 10px;
+}
+.staticResponse{
+    background-color: white;
+    display: flex;
+    margin-left: 2em;
+    margin-top: 1em;
+    padding: 1.3em;
+border-radius: 10px;
+    }
+.profileAndComment{
+    display: flex;
+    flex-direction: column;
+}
+.profile{
+    display: flex;
+    justify-content: space-between
+}
+.profile .division{
+    display: flex;
+    justify-content: space-between;
+    width:35%;
+    text-align: center;
+}
+.profile .division p{
+    display: flex;
+    align-items: center;
+}
+.replyBtn{
+    display: flex;
+    text-align: center;
+    margin-right: 12px;
+}
+.replyBtn button{
+    border: none;
+    background-color: inherit;
+}
+.replyBtn img{
+    width: 10px;
+    height: 10px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+.replyBtn p{
+    display: flex;
+    align-items: center;
+}
