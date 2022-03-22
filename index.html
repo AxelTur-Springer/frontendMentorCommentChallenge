@@ -9,31 +9,43 @@
 </head>
 <body>
     <div class="flexCommentSeccion">
-       
-        <div class="staticComment Amy">
-            <div class="scoreNum">
-                <button><img src="/assets/icon-plus.svg" alt=""></button>
-                <p>2</p>
-                <button><img src="/assets/icon-minus.svg" alt=""></button>
-            </div>
-            <div class="profileAndComment">
-                <div class="profile">
-                    <div class="division">
-                        <img src="/assets/avatars/image-amyrobson.webp" alt="">
-                        <p>amyrobson</p>
-                        <p class="timePassed">1 month ago</p>
-                    </div> 
-                    <div class="replyBtn">
-                        <button><img src="/assets/icon-reply.svg" alt="">  <p>Reply</p></button>
-
-                    </div> 
+       <div class="responseAndStatic" id="responseAndStatic">
+            <div class="staticComment Amy">
+                <div class="scoreNum">
+                    <button><img src="/assets/icon-plus.svg" alt=""></button>
+                    <p>2</p>
+                    <button><img src="/assets/icon-minus.svg" alt=""></button>
                 </div>
-                <div class="comment">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ad necessitatibus fugiat ipsam accusantium quod, quaerat, nulla nihil quas quo, error doloribus non delectus perspiciatis sequi consequatur quasi sint molestiae.</p>
+                <div class="profileAndComment">
+                    <div class="profile">
+                        <div class="division">
+                            <img src="/assets/avatars/image-amyrobson.webp" alt="">
+                            <p>amyrobson</p>
+                            <p class="timePassed">1 month ago</p>
+                        </div> 
+                        <div class="replyBtn" id="Amy" onclick= "idOfResponse(this.id)">
+                            <button><img src="/assets/icon-reply.svg" alt="">  <p>Reply</p></button>
+
+                        </div> 
+                    </div>
+                    <div class="comment">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ad necessitatibus fugiat ipsam accusantium quod, quaerat, nulla nihil quas quo, error doloribus non delectus perspiciatis sequi consequatur quasi sint molestiae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="responseDiv" id="responseDiv">
+                
+            </div>
+           <div class="CopyCommentBox" id="CopyCommentBox">
+                <div><img src="/assets/avatars/image-juliusomo.webp" alt=""></div>
+               
+                <div class="form" id="form">
+                    <form action="">
+                        <input type="text" value="">
+                    </form>
                 </div>
             </div>
         </div>
-        
         <div class="staticComment Max">
             <div class="scoreNum">
                 <button><img src="/assets/icon-plus.svg" alt=""></button>
@@ -47,7 +59,7 @@
                         <p>maxblagun</p>
                         <p class="timePassed">1 month ago</p>
                     </div> 
-                    <div class="replyBtn">
+                    <div class="replyBtn" id="Max" onclick= "idOfResponse(this.id)">
                         <button><img src="/assets/icon-reply.svg" alt="">  <p>Reply</p></button>
 
                     </div> 
@@ -70,7 +82,7 @@
                         <p>ramsesmrion</p>
                         <p class="timePassed">1 month ago</p>
                     </div> 
-                    <div class="replyBtn">
+                    <div class="replyBtn" id="Ram" onclick= "idOfResponse(this.id)">
                         <button><img src="/assets/icon-reply.svg" alt="">  <p>Reply</p></button>
 
                     </div> 
@@ -93,7 +105,7 @@
                         <p>juliusomo</p>
                         <p class="timePassed">1 month ago</p>
                     </div> 
-                    <div class="replyBtn">
+                    <div class="replyBtn" id="me" onclick= "idOfResponse(this.id)">
                         <button><img src="/assets/icon-reply.svg" alt="">  <p>Reply</p></button>
                     </div> 
                 </div>
@@ -105,5 +117,6 @@
 
     </div>
 
+    <script src="/script.js"></script>
 </body>
 </html>

@@ -19,11 +19,12 @@ padding: 2em 30em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-right:1em;
     text-align: center;
     background-color: hsl(223, 19%, 93%);
     padding: 5px 6px;
     border-radius: 5px;
+    height: 6em; 
+    margin: auto;margin-right:1em;
 }
 .scoreNum button{
   background-color: inherit;
@@ -32,7 +33,9 @@ padding: 2em 30em;
 .scoreNum button:hover{
     cursor: pointer;
   }
-
+.comment{
+    margin-top: 10px;
+}
 .staticComment{
 background-color: white;
 display: flex;
@@ -85,3 +88,11 @@ border-radius: 10px;
     display: flex;
     align-items: center;
 }
+
+/* response div styling*/
+.responseDiv div{
+
+}
+/*.CopyCommentBox{
+    display: none;
+}*/
