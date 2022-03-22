@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="flexCommentSeccion">
-       <div class="responseAndStatic" id="responseAndStatic">
-            <div class="staticComment Amy">
+       <div class="responseAndStatic" id="responseAndStaticAmy">
+            <div class="staticComment Amy" id="Amy">
                 <div class="scoreNum">
                     <button><img src="/assets/icon-plus.svg" alt=""></button>
                     <p>2</p>
@@ -23,7 +23,7 @@
                             <p>amyrobson</p>
                             <p class="timePassed">1 month ago</p>
                         </div> 
-                        <div class="replyBtn" id="Amy" onclick= "idOfResponse(this.id)">
+                        <div class="replyBtn"onclick= "idOfResponse(this.parentElement.parentElement.parentElement.parentElement.id)">
                             <button><img src="/assets/icon-reply.svg" alt="">  <p>Reply</p></button>
 
                         </div> 
@@ -33,9 +33,8 @@
                     </div>
                 </div>
             </div>
-            <div class="responseDiv" id="responseDiv">
-                
-            </div>
+           
+
            <div class="CopyCommentBox" id="CopyCommentBox">
                 <div><img src="/assets/avatars/image-juliusomo.webp" alt=""></div>
                
@@ -44,9 +43,13 @@
                         <input type="text" value="">
                     </form>
                 </div>
+                <div class="sendReply">
+                    <button>REPLY</button>
+                </div>
             </div>
         </div>
-        <div class="staticComment Max">
+       <div id="responseAndStaticMax">
+        <div class="staticComment Max" >
             <div class="scoreNum">
                 <button><img src="/assets/icon-plus.svg" alt=""></button>
                 <p>2</p>
@@ -59,7 +62,7 @@
                         <p>maxblagun</p>
                         <p class="timePassed">1 month ago</p>
                     </div> 
-                    <div class="replyBtn" id="Max" onclick= "idOfResponse(this.id)">
+                    <div class="replyBtn" id="Max" onclick= "idOfResponse(this.parentElement.parentElement.parentElement.parentElement.id)">
                         <button><img src="/assets/icon-reply.svg" alt="">  <p>Reply</p></button>
 
                     </div> 
@@ -69,6 +72,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <div class="staticResponse Ram">
             <div class="scoreNum">
                 <button><img src="/assets/icon-plus.svg" alt=""></button>

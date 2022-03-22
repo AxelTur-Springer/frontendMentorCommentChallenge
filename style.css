@@ -93,6 +93,16 @@ border-radius: 10px;
 .responseDiv div{
 
 }
-/*.CopyCommentBox{
-    display: none;
-}*/
+
+.CopyCommentBox{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 2em;
+    margin-top: 1em;
+    padding: 1.3em;
+border-radius: 10px;
+}
+.CopyCommentBox img{
+    width: 24px;
+ }
