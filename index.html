@@ -34,21 +34,30 @@
                 </div>
             </div>
            
-
-           <div class="CopyCommentBox" id="CopyCommentBox">
+             <!--  this is the comment generic copy comment box  --->
+          
+             <div class="CopyCommentBox" id="CopyCommentBox">
                 <div><img src="/assets/avatars/image-juliusomo.webp" alt=""></div>
                
                 <div class="form" id="form">
-                    <form action="">
-                        <input type="text" value="">
+                    <form action="" id="formContent">
+                        <input  type="text" id="tester">
+                        <button type="button" value=""
+                         onclick="retrieveComment(this.previousElementSibling.value,
+                         this.parentElement.parentElement.parentElement,
+                         this.parentElement.parentElement.parentElement.parentElement.id)">
+                         Enviar
+                        </button>
                     </form>
                 </div>
                 <div class="sendReply">
                     <button>REPLY</button>
                 </div>
             </div>
+                   <!--  this is the comment generic copy comment box  --->
         </div>
-       <div id="responseAndStaticMax">
+       
+        <div id="responseAndStaticMax">
         <div class="staticComment Max" >
             <div class="scoreNum">
                 <button><img src="/assets/icon-plus.svg" alt=""></button>
@@ -73,6 +82,8 @@
             </div>
         </div>
     </div>
+
+    <div id="staticResponse Ram">
         <div class="staticResponse Ram">
             <div class="scoreNum">
                 <button><img src="/assets/icon-plus.svg" alt=""></button>
@@ -86,7 +97,7 @@
                         <p>ramsesmrion</p>
                         <p class="timePassed">1 month ago</p>
                     </div> 
-                    <div class="replyBtn" id="Ram" onclick= "idOfResponse(this.id)">
+                    <div class="replyBtn" id="Ram" onclick= "idOfResponse(this.parentElement.parentElement.parentElement.parentElement.id)">
                         <button><img src="/assets/icon-reply.svg" alt="">  <p>Reply</p></button>
 
                     </div> 
@@ -96,7 +107,9 @@
                 </div>
             </div>
         </div>
-        <div class="staticResponse Me">
+    </div>
+        
+        <div class="staticResponse Me" id="me">
             <div class="scoreNum">
                 <button><img src="/assets/icon-plus.svg" alt=""></button>
                 <p>2</p>
@@ -107,14 +120,17 @@
                     <div class="division">
                         <img src="/assets/avatars/image-juliusomo.webp" alt="">
                         <p>juliusomo</p>
+                        <p class="you">You</p>
                         <p class="timePassed">1 month ago</p>
                     </div> 
-                    <div class="replyBtn" id="me" onclick= "idOfResponse(this.id)">
-                        <button><img src="/assets/icon-reply.svg" alt="">  <p>Reply</p></button>
-                    </div> 
+                    <div>
+                        <button onclick="deleteComm(this.parentElement.parentElement.parentElement.parentElement.id)">Delete</button>
+                        <button>Edit</button>
+                    </div>
+                  
                 </div>
-                <div class="comment">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ad necessitatibus fugiat ipsam accusantium quod, quaerat, nulla nihil quas quo, error doloribus non delectus perspiciatis sequi consequatur quasi sint molestiae.</p>
+                <div class="comment" >
+                    <p id="commentSeccion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At cupiditate repudiandae inventore non suscipit impedit saepe minus! Aliquid excepturi, modi blanditiis inventore obcaecati accusamus magni molestia lor e esse et perferendis ipsam?</p>
                 </div>
             </div>
         </div>

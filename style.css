@@ -51,8 +51,12 @@ border-radius: 10px;
     padding: 1.3em;
 border-radius: 10px;
     }
+    .scoreNum{
+        margin-left: 0px;
+    }
 .profileAndComment{
     display: flex;
+    width: 100%;
     flex-direction: column;
 }
 .profile{
@@ -95,7 +99,7 @@ border-radius: 10px;
 }
 
 .CopyCommentBox{
-    display: flex;
+    display: none;
     justify-content: space-between;
     background-color: white;
     margin-left: 2em;
