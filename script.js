@@ -14,14 +14,17 @@
 
 // Function to control comment delete
 
-    function deleteComm(id){
-let toDelete =document.getElementById(id)
-toDelete.remove()
-}
+function deleteComm(id){
+    console.log(id)
+    id.remove()
+
+    }
+
+
 
 function retrieveComment(Comment,commentBoxRemove,appendId){
-    commentBoxRemove.remove();
     
+    commentBoxRemove.remove();
     let newDiv = document.createElement("div");
     document.getElementById(appendId);
     let apendTo = document.getElementById(appendId);
