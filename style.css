@@ -3,9 +3,11 @@
     margin: 0px;
     box-sizing: border-box;
     font-size: 12px;
+    font-family: 'Rubik', sans-serif;
 }
 body{
     background-color: hsl(228, 33%, 97%);
+    
 }
 .flexCommentSeccion{
 display: flex;
@@ -127,11 +129,15 @@ border-radius: 10px;
     height: 24px;
  }
  .commentBox {
+    resize: none;
     height: 6em;
 width:80%;
 border-radius:8px ;
 border: black thin solid; 
 outline: none;
+text-align: left;
+color:transparent;
+text-shadow:0 0 0 rgb(0, 0, 0);
 }
 .btnSendComment{
     color: white;
@@ -140,6 +146,7 @@ outline: none;
     border: none;
     border-radius:5px ;
     margin-left: 1em;
+position: absolute;
 }
 .form{
     width: 100%;
