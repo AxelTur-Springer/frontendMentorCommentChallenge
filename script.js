@@ -14,12 +14,22 @@
 
 // Function to control comment delete
 
+let commentToRemove;
+let deletePrompt = document.getElementById("backgroundFume");
 function deleteComm(id){
-    console.log(id)
-    id.remove()
+  deletePrompt.style.display = "flex"
+   commentToRemove = id;
 
-    }
-
+   }
+    
+function YesOrNo(confirm){
+if(confirm === "si"){
+  commentToRemove.remove()
+  deletePrompt.style.display = "none"
+}else{ deletePrompt.style.display = "none"}
+}
+  
+// Function to control comment delete
 
 
 function retrieveComment(Comment,commentBoxRemove,appendId){
