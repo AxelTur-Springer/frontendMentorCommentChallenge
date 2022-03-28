@@ -48,7 +48,9 @@
                         <button type="button" value="" class="btnSendComment"
                          onclick="retrieveComment(this.previousElementSibling.value,
                          this.parentElement.parentElement.parentElement,
-                         this.parentElement.parentElement.parentElement.parentElement.id)">
+                         this.parentElement.parentElement.parentElement.parentElement.id,
+                         this.parentElement.parentElement.parentElement.parentElement.children[0]
+                         .childNodes[3].childNodes[1].childNodes[1].childNodes[3].innerText)">
                          Enviar
                         </button>
                     </form>

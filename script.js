@@ -33,7 +33,8 @@ if(confirm === "si"){
 
 
 function retrieveComment(Comment,commentBoxRemove,appendId,email){
-    let commentPlusTagname = "@ axel" + Comment
+  
+    let commentPlusTagname = "@" + email + " " + Comment
     commentBoxRemove.remove();
     let newDiv = document.createElement("div");
     document.getElementById(appendId);
@@ -46,6 +47,6 @@ function retrieveComment(Comment,commentBoxRemove,appendId,email){
      newDiv.lastElementChild.lastElementChild.lastElementChild.innerHTML =commentPlusTagname;
      apendTo.appendChild(newDiv)
 
-     console.log(newDiv.lastElementChild.lastElementChild.lastElementChild)
+  
 }
 
