@@ -24,7 +24,7 @@ function deleteComm(id){
     
 function YesOrNo(confirm){
 if(confirm === "si"){
-  commentToRemove.remove()
+  commentToRemove.style.display ="none"
   deletePrompt.style.display = "none"
 }else{ deletePrompt.style.display = "none"}
 }
@@ -36,7 +36,7 @@ if(confirm === "si"){
 
 //Function to edit comment 
 
-//document.getElementById("formNumber2").style.display ="none"
+
 
 let pathToCommentSeccion;
 let pathToForm;
@@ -45,7 +45,9 @@ function editComment(PathToCommentSeccionDiv,PathToForm){
     pathToCommentSeccion =  PathToCommentSeccionDiv;
     pathToForm = PathToForm;
     textInside = PathToCommentSeccionDiv.innerText;// correct
-pathToCommentSeccion.style.visibility = "hidden" 
+    console.log(pathToCommentSeccion) 
+
+    pathToCommentSeccion.style.visibility = "hidden"
 PathToForm.style.display ="initial" //
 PathToForm.children[0].children[0].innerText = textInside;
 
@@ -63,7 +65,6 @@ pathToCommentSeccion.innerText = test.value;
 
 
 
-
 function retrieveComment(Comment,commentBoxRemove,appendId,email){
 
     let commentPlusTagname = "@" + email + " " + Comment
@@ -74,8 +75,23 @@ function retrieveComment(Comment,commentBoxRemove,appendId,email){
      newDiv.innerHTML = document.getElementById("me").innerHTML;
    
      
-     newDiv.classList.add('CopyCommentBox');
-     newDiv.style.display="flex";
+     newDiv.classList.add('me');
+
+     function myFunction(x) {
+      if (x.matches) { // If media query matches
+        
+     newDiv.style.display="grid";
+      } else {
+    
+        newDiv.style.display="flex";
+      }
+    }
+    
+    var x = window.matchMedia("(max-width: 700px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+    
+
      newDiv.lastElementChild.lastElementChild.lastElementChild.innerHTML =commentPlusTagname;
      apendTo.appendChild(newDiv)
 

@@ -121,13 +121,19 @@ border-radius: 10px;
 
 .CopyCommentBox{
     display: none;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin-top: 1em;
     margin-left: 2em;
     padding: 1.3em;
 border-radius: 10px;
 }
-
+.me{
+    background-color: rgb(255, 255, 255);
+    margin-top: 1em;
+    margin-left: 2em;
+    padding: 1.3em;
+border-radius: 10px;
+}
 .CopyProfileImg img{
     width: 24px;
     height: 24px;
@@ -319,22 +325,32 @@ text-align: center;
 .profileAndComment{
     grid-area: profile;
 }
-.CopyCommentBox{
-    grid-template-areas: 
-    "form"
-    "profile"
-    ;
+
+.me{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1em;
+    margin-left: 2em;
+    padding: 1.3em;
+border-radius: 10px;
+grid-template-areas: 
+"profile"
+"score";
 }
-.CopyProfileImg{
+
+.me .scoreNum{
+    grid-area: score;
+}
+.me .profileAndComment{
     grid-area: profile;
 }
 
+
 .form{
-    grid-area: form;
-    margin-left: 1em;
+    margin-left: 0.5em;
 }
 .btnSendComment{
-    
- 
+    margin-left: 0.2em;
+    margin-top: 1.6em;
 }
 }
