@@ -164,7 +164,10 @@ position: absolute;
 }
 
 
-
+.editOrDeleteMobile{
+    display: none;
+    
+ }
 
 .editOrDelete{
     display: flex;justify-content: space-around;
@@ -285,20 +288,44 @@ font-size: 1.4em;
 .profile .division{
     display: flex;
     justify-content: space-between;
-    width:70%;
+    width:15em;
     text-align: center;
 }
 .editOrDelete{
-    display: flex;justify-content: space-around;
-    width: 10em;
+   display: none;
+   
+}
+.editOrDeleteMobile{
+    display: flex;
+    justify-content: space-around;
 }
 
-.editOrDelete img{
+.editOrDeleteMobile img{
 width: 0.7em;
 height: 0.9em;
 }
-.editOrDelete button{
-    font-size: 16px;
+.editOrDeleteMobile button{
+    background: none;border: none;
+    font-size: 1.4em;
+    
+}
+
+
+.editOrDeleteMobile .delete {
+    text-align: center;
+    margin-top: 1.5em;
+}
+.editOrDeleteMobile .delete p{
+    color: hsl(357, 81%, 59%);
+    font-size: 0.9em;
+}
+.editOrDeleteMobile .edit {
+    text-align: center;
+    margin-top: 1.5em;
+}
+.editOrDeleteMobile .edit p{
+    color: hsl(238, 40%, 52%);
+    font-size: 0.9em;
 }
 
 .staticComment{
@@ -312,14 +339,14 @@ height: 0.9em;
 .staticResponse{
     display: grid;
     grid-template-areas: 
-    "profile"
-    "score"
+    "profile profile"
+    "score edit";
     ;
 
 }
 .scoreNum{
+    grid-area: score;
     margin-top: 1em;
-grid-area: score;
 flex-direction: row;
 width: 9em;
 height:3em ;
@@ -336,7 +363,9 @@ text-align: center;
 .profileAndComment{
     grid-area: profile;
 }
-
+.editOrDeleteMobile{
+    grid-area: edit;
+}
 .me{
     display: grid;
     background-color: rgb(255, 255, 255);
@@ -345,8 +374,8 @@ text-align: center;
     padding: 1.3em;
 border-radius: 10px;
 grid-template-areas: 
-"profile"
-"score";
+"profile profile"
+"score edit";
 }
 
 .me .scoreNum{
@@ -354,6 +383,9 @@ grid-template-areas:
 }
 .me .profileAndComment{
     grid-area: profile;
+}
+.me .editOrDeleteMobile{
+    grid-area: edit;
 }
 
 

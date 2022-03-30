@@ -45,7 +45,7 @@ function editComment(PathToCommentSeccionDiv,PathToForm){
     pathToCommentSeccion =  PathToCommentSeccionDiv;
     pathToForm = PathToForm;
     textInside = PathToCommentSeccionDiv.innerText;// correct
-    console.log(pathToCommentSeccion) 
+    console.log(pathToForm) 
 
     pathToCommentSeccion.style.visibility = "hidden"
 PathToForm.style.display ="initial" //
@@ -66,7 +66,6 @@ pathToCommentSeccion.innerText = test.value;
 
 
 function retrieveComment(Comment,commentBoxRemove,appendId,email){
-
     let commentPlusTagname = "@" + email + " " + Comment
     commentBoxRemove.remove();
     let newDiv = document.createElement("div");
@@ -91,8 +90,8 @@ function retrieveComment(Comment,commentBoxRemove,appendId,email){
     myFunction(x) // Call listener function at run time
     x.addListener(myFunction) // Attach listener function on state changes
     
-
-     newDiv.lastElementChild.lastElementChild.lastElementChild.innerHTML =commentPlusTagname;
+    console.log()
+    newDiv.children[1].children[2].children[0].innerText =commentPlusTagname;
      apendTo.appendChild(newDiv)
 
   

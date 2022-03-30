@@ -157,7 +157,21 @@
                     <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. At cupiditate repudiandae inventore non suscipit impedit saepe minus! Aliquid excepturi, modi blanditiis inventore obcaecati accusamus magni molestia lor e esse et perferendis ipsam?</p>
                 </div>
             </div>
-            
+            <div class="editOrDeleteMobile">
+                <div class="delete">
+                    <img src="/assets/icon-delete.svg" alt="" srcset="">
+                    <button onclick="deleteComm(this.parentElement.parentElement.parentElement)">
+                        <p>Delete</p>
+                    </button>
+                </div>
+                <div class="edit">
+                    <img src="/assets/icon-edit.svg" alt="">
+                    <button onclick="editComment(this.parentElement.parentElement
+                    .parentElement.childNodes[3].childNodes[5], this.parentElement
+                    .parentElement.parentElement.childNodes[3].childNodes[3])">
+                    <p>Edit</p></button>
+                </div>
+            </div>
         </div>
         
         <!-- This is a example of the commented div, its purpose is to conserve the backnone
