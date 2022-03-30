@@ -112,7 +112,7 @@
         </div>
     </div>
         
-        <div class="staticResponse Me">
+        <div class="staticResponse Me" id="me">
             <div class="scoreNum">
                 <button><img src="/assets/icon-plus.svg" alt=""></button>
                 <p>2</p>
@@ -135,17 +135,29 @@
                         </div>
                         <div class="edit">
                             <img src="/assets/icon-edit.svg" alt="">
-                            <button><p>Edit</p></button>
+                            <button onclick="editComment(this.parentElement.parentElement
+                            .parentElement.parentElement.childNodes[5],this.parentElement
+                            .parentElement.parentElement.parentElement.childNodes[3])">
+                            <p>Edit</p></button>
                         </div>
-                           
-                            
                     </div>
-                  
+                    
                 </div>
-                <div class="comment" >
-                    <p id="commentSeccion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At cupiditate repudiandae inventore non suscipit impedit saepe minus! Aliquid excepturi, modi blanditiis inventore obcaecati accusamus magni molestia lor e esse et perferendis ipsam?</p>
+                <div class="form" id="formNumber2">
+                    <form action="">
+                        <textarea  class="commentBox" id="editForm"> </textarea>
+                        <button type="button" value="" class="btnSendComment" onclick="replaceNewComment(this.parentElement
+                        .parentElement.parentElement.parentElement.children[1].children[1].children[0].children
+                        [0])">
+                         Enviar
+                        </button>
+                    </form>
+                </div>
+                <div class="comment" id="commentSeccion" >
+                    <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. At cupiditate repudiandae inventore non suscipit impedit saepe minus! Aliquid excepturi, modi blanditiis inventore obcaecati accusamus magni molestia lor e esse et perferendis ipsam?</p>
                 </div>
             </div>
+            
         </div>
         
         <!-- This is a example of the commented div, its purpose is to conserve the backnone
@@ -175,12 +187,22 @@
                         </div>
                         <div class="edit">
                             <img src="/assets/icon-edit.svg" alt="">
-                            <button><p>Edit</p></button>
+                            <button onclick="editComment(`commentSeccion`)"><p>Edit</p></button>
                         </div>
                            
                             
                     </div>
                   
+                </div>
+                <div class="form" id="formNumber2">
+                    <form action="">
+                        <textarea  class="commentBox" id="editForm"> </textarea>
+                        <button type="button" value="" class="btnSendComment" onclick="replaceNewComment(this.parentElement
+                        .parentElement.parentElement.parentElement.children[1].children[1].children[0].children
+                        [0])">
+                         Enviar
+                        </button>
+                    </form>
                 </div>
                 <div class="comment" >
                     <p id="commentSeccion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At cupiditate repudiandae inventore non suscipit impedit saepe minus! Aliquid excepturi, modi blanditiis inventore obcaecati accusamus magni molestia lor e esse et perferendis ipsam?</p>
@@ -209,6 +231,11 @@
         </div>
     </div>
 </div>
+
+
+
+
+
     <script src="/script.js"></script>
 </body>
 </html>

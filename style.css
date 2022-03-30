@@ -16,8 +16,8 @@ button:hover{
 .flexCommentSeccion{
 display: flex;
 flex-direction: column;
-padding: 2em 30em;
-}
+width: 50%;
+margin: auto;}
 .profileAndComment img{
     width: 24px;height: 24px;
 }
@@ -251,3 +251,23 @@ font-size: 16px;
     background-color: hsl(215, 11%, 40%);
 }
 /* Delete prompt message styling*/
+
+#formNumber2{
+    display: none;
+}
+
+
+@media only screen and (max-width:1100px) {
+    .flexCommentSeccion{
+        
+        width: 75%;
+        
+  }
+}
+@media only screen and (max-width:700px) {
+    .flexCommentSeccion{
+        
+        width: 95%;
+        
+  }
+}

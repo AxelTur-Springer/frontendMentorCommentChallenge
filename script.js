@@ -29,11 +29,43 @@ if(confirm === "si"){
 }else{ deletePrompt.style.display = "none"}
 }
   
-// Function to control comment delete
+// Function to control comment delete end
+
+
+
+
+//Function to edit comment 
+
+//document.getElementById("formNumber2").style.display ="none"
+
+let pathToCommentSeccion;
+let pathToForm;
+let textInside;
+function editComment(PathToCommentSeccionDiv,PathToForm){
+    pathToCommentSeccion =  PathToCommentSeccionDiv;
+    pathToForm = PathToForm;
+    textInside = PathToCommentSeccionDiv.innerText;// correct
+pathToCommentSeccion.style.visibility = "hidden" 
+PathToForm.style.display ="initial" //
+PathToForm.children[0].children[0].innerText = textInside;
+
+}
+
+function replaceNewComment(test){
+pathToCommentSeccion.style.visibility = "visible"
+pathToForm.style.display ="none"
+pathToCommentSeccion.innerText = test.value;
+}
+
+//Function to edit comment End
+
+
+
+
 
 
 function retrieveComment(Comment,commentBoxRemove,appendId,email){
-  
+
     let commentPlusTagname = "@" + email + " " + Comment
     commentBoxRemove.remove();
     let newDiv = document.createElement("div");
