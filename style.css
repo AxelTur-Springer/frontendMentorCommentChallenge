@@ -266,8 +266,75 @@ font-size: 16px;
 }
 @media only screen and (max-width:700px) {
     .flexCommentSeccion{
-        
         width: 95%;
-        
   }
+
+  .profile{
+    display: flex;
+    justify-content: space-between
+}
+.profile .division{
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    text-align: center;
+}
+.editOrDelete{
+    display: flex;justify-content: space-around;
+    width: 10em;
+}
+
+.staticComment{
+    display: grid;
+    grid-template-areas: 
+    "profile"
+    "score"
+    ;
+
+}
+.staticResponse{
+    display: grid;
+    grid-template-areas: 
+    "profile"
+    "score"
+    ;
+
+}
+.scoreNum{
+    margin-top: 1em;
+grid-area: score;
+flex-direction: row;
+width: 9em;
+height:3em ;
+text-align: center;
+}
+.scoreNum p {
+    display: flex;flex-direction: column;
+    justify-content: center;
+}
+.scoreNum button {
+    display: flex;flex-direction: column;
+    justify-content: center;
+}
+.profileAndComment{
+    grid-area: profile;
+}
+.CopyCommentBox{
+    grid-template-areas: 
+    "form"
+    "profile"
+    ;
+}
+.CopyProfileImg{
+    grid-area: profile;
+}
+
+.form{
+    grid-area: form;
+    margin-left: 1em;
+}
+.btnSendComment{
+    
+ 
+}
 }
